@@ -105,3 +105,23 @@ background-clip: text; /* Ye extra line add karein */
 .hero {
     background: transparent !important; /* Background ko transparent rakhein taaki animation dikhe */
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.1) !important; /* Halka transparent */
+    backdrop-filter: blur(5px);
+}
+
+.hero {
+    background: transparent !important; /* Ise transparent karna zaroori hai */
+}
+
+/* Text ko white ya light rakhein taaki dark background pe dikhe */
+h1, p {
+    color: #333; 
+}

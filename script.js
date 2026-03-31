@@ -50,3 +50,19 @@ function draw() {
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
+
+VANTA.WAVES({
+  el: "#vanta-bg",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x9b59b6, // Purple shade
+  shininess: 60.00,
+  waveHeight: 20.00,
+  waveSpeed: 0.80,
+  zoom: 0.90
+})
