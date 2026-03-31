@@ -131,3 +131,33 @@ nav a:hover { color: #000; }
 }
 
 .play-icon { font-size: 0.8rem; margin-left: 5px; }
+
+
+/* In lines ko apni style.css mein update karein */
+
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    background: transparent !important; /* White bar hata di */
+    border-bottom: none !important;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Heading ko thoda aur saaf dikhane ke liye */
+.hero h1 {
+    color: #000;
+    text-shadow: 0px 0px 20px rgba(255,255,255,0.5); /* Halka glow taaki text dikhe */
+}
