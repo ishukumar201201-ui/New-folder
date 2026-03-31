@@ -1,62 +1,95 @@
+/* Purana code hata kar ye naya wala daalein */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif; /* Ek modern font */
 }
 
 body {
-    background-color: #f4f7f6;
+    background: #f0f2f5; /* Light gray background */
+    color: #1d1d1f;
+    overflow-x: hidden;
 }
 
+/* HEADER KO GLASSY BANATE HAIN */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 20px 5%;
+    padding: 15px 8%;
     align-items: center;
+    position: fixed; /* Scroll karne par upar hi rahega */
+    width: 100%;
+    backdrop-filter: blur(10px); /* Kaanch jaisa dhundla effect */
+    background: rgba(255, 255, 255, 0.7); 
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    z-index: 1000;
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -1px;
 }
 
 nav ul {
     display: flex;
     list-style: none;
-    gap: 30px;
+    gap: 35px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #555;
+    font-size: 14px;
     font-weight: 500;
+    transition: 0.3s;
 }
 
+nav a:hover { color: #000; }
+
+/* HERO SECTION (Main Content) */
 .hero {
-    height: 80vh;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Responsive text size */
+    font-weight: 800;
+    line-height: 1.1;
+    max-width: 900px;
 }
 
 .hero h1 span {
-    color: #8e44ad; /* Purple color like TIDY */
+    background: linear-gradient(90deg, #ff4d4d, #f9cb28); /* Gradient color */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+.hero p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 1.2rem;
+}
+
+/* BUTTON DESIGN */
 .cta-btn {
-    display: inline-block;
-    margin-top: 25px;
-    background-color: #8e44ad;
-    color: white;
-    padding: 15px 35px;
-    border-radius: 30px;
+    margin-top: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 16px 40px;
+    border-radius: 50px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    transform: scale(1.05); /* Hover pe halka bada hoga */
 }
