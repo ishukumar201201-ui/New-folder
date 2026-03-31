@@ -7,9 +7,10 @@ VANTA.WAVES({
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x110722,       /* Aur dark base taaki white text chamke */
+  // NEW COLOR PALETTE: Bright Purple & Magenta merge
+  color: 0xc147cc,       // Boht zyada bright purple base
   shininess: 100.00,     /* FULL SHINE! */
-  waveHeight: 40.00,     /* Unchi waves */
-  waveSpeed: 0.60,
-  zoom: 0.75
+  waveHeight: 35.00,     /* Premium waves style */
+  waveSpeed: 0.65,
+  zoom: 1.15             // Thoda close up taaki bright lines zyada dikhein
 })

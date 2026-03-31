@@ -1,4 +1,4 @@
-/* Purana code delete karke ye paste karein */
+/* Purana code hata kar ye update paste karein */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
@@ -6,23 +6,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Modern Font */
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html {
     height: 100%;
     width: 100%;
-    /* No default background here to show animation */
 }
 
-/* Background Animation Container */
+/* Background Container with a slight overlay for text readability */
 #vanta-bg {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -2; /* Background k piche rahega */
+    z-index: -2;
+    background: linear-gradient(180deg, rgba(200, 200, 200, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 header {
@@ -34,9 +34,8 @@ header {
     top: 0;
     width: 100%;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.05); /* Very slight translucent header */
-    backdrop-filter: blur(10px); /* Premium blurry header effect */
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    background: transparent !important; /* HATA DIYA HEADER KA BACKGROUND! */
+    border-bottom: none;
 }
 
 .logo {
@@ -54,13 +53,13 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #000; /* Black navigation on bright background */
     font-size: 14px;
     font-weight: 500;
     transition: color 0.3s;
 }
 
-nav a:hover { color: #000; }
+nav a:hover { color: #8e44ad; }
 
 .sign-in-btn {
     border: 1.5px solid #ccc;
@@ -75,14 +74,14 @@ nav a:hover { color: #000; }
 
 .sign-in-btn:hover { background: #f4f4f4; border-color: #999; }
 
-/* MAIN HERO CONTENT */
+/* MAIN CONTENT */
 .hero {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: transparent !important; /* HATAYO WHITE BACKGROUND! */
+    background: transparent !important; /* NO MORE WHITE BACKGROUND */
     padding-top: 100px;
 }
 
@@ -90,35 +89,24 @@ nav a:hover { color: #000; }
     max-width: 900px;
 }
 
-/* Purana hero text section hata kar ye wala daalein */
-
 .hero h1 {
     font-size: 4rem; 
     font-weight: 800;
     line-height: 1.1;
-    color: #ffffff; /* Black se WHITE kar diya */
+    color: #000;
     margin-bottom: 25px;
-    /* TEXT SHINE: Ye line text ke peeche glow degi */
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(113, 36, 155, 0.6);
-    letter-spacing: -2px;
+    text-shadow: 0px 0px 20px rgba(255,255,255,0.8); /* Glow effect for readability on waves */
 }
 
 .hero h1 span {
-    color: #d187ff; /* Purple part ko thoda light kiya taaki dikhe */
-    text-shadow: 0 0 20px rgba(209, 135, 255, 0.8);
+    color: #71249b; /* Bright purple highlight */
 }
 
 .hero p {
     font-size: 1.15rem;
-    color: rgba(255, 255, 255, 0.8); /* Paragraph ko bhi white-ish kiya */
+    color: #333; /* Dark gray for better contrast on bright bg */
     margin-bottom: 45px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header .logo, nav a {
-    color: #ffffff !important; /* Header ke links ko bhi white kar diya */
+    line-height: 1.6;
 }
 
 .cta-btn {
@@ -143,33 +131,3 @@ header .logo, nav a {
 }
 
 .play-icon { font-size: 0.8rem; margin-left: 5px; }
-
-
-/* In lines ko apni style.css mein update karein */
-
-#vanta-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-header {
-    background: transparent !important; /* White bar hata di */
-    border-bottom: none !important;
-}
-
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-/* Heading ko thoda aur saaf dikhane ke liye */
-.hero h1 {
-    color: #000;
-    text-shadow: 0px 0px 20px rgba(255,255,255,0.5); /* Halka glow taaki text dikhe */
-}
