@@ -7,9 +7,9 @@ VANTA.WAVES({
   minWidth: 200.00,
   scale: 1.00,
   scaleMobile: 1.00,
-  color: 0x220c3b,       // Dark Purple Base
-  shininess: 40.00,      // Chamak thodi kam premium look ke liye
-  waveHeight: 35.00,     // Lehrein thodi unchi
-  waveSpeed: 0.50,       // Speed thodi slow aur smooth
-  zoom: 0.65             // Zoom out taaki pattern bada dikhe
+  color: 0x110722,       /* Aur dark base taaki white text chamke */
+  shininess: 100.00,     /* FULL SHINE! */
+  waveHeight: 40.00,     /* Unchi waves */
+  waveSpeed: 0.60,
+  zoom: 0.75
 })
