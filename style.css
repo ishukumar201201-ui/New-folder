@@ -90,23 +90,35 @@ nav a:hover { color: #000; }
     max-width: 900px;
 }
 
+/* Purana hero text section hata kar ye wala daalein */
+
 .hero h1 {
-    font-size: 4rem; /* Bada, impactful text */
+    font-size: 4rem; 
     font-weight: 800;
     line-height: 1.1;
-    color: #000;
+    color: #ffffff; /* Black se WHITE kar diya */
     margin-bottom: 25px;
+    /* TEXT SHINE: Ye line text ke peeche glow degi */
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.4), 0 0 40px rgba(113, 36, 155, 0.6);
+    letter-spacing: -2px;
 }
 
 .hero h1 span {
-    color: #71249b; /* Purple gradient shade */
+    color: #d187ff; /* Purple part ko thoda light kiya taaki dikhe */
+    text-shadow: 0 0 20px rgba(209, 135, 255, 0.8);
 }
 
 .hero p {
     font-size: 1.15rem;
-    color: #555;
+    color: rgba(255, 255, 255, 0.8); /* Paragraph ko bhi white-ish kiya */
     margin-bottom: 45px;
-    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .logo, nav a {
+    color: #ffffff !important; /* Header ke links ko bhi white kar diya */
 }
 
 .cta-btn {
