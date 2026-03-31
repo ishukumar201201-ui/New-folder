@@ -1,35 +1,49 @@
-/* Purana code hata kar ye naya wala daalein */
+/* Purana code delete karke ye paste karein */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif; /* Ek modern font */
+    font-family: 'Poppins', sans-serif; /* Modern Font */
 }
 
-body {
-    background: #f0f2f5; /* Light gray background */
-    color: #1d1d1f;
-    overflow-x: hidden;
+body, html {
+    height: 100%;
+    width: 100%;
+    /* No default background here to show animation */
 }
 
-/* HEADER KO GLASSY BANATE HAIN */
+/* Background Animation Container */
+#vanta-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; /* Background k piche rahega */
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 8%;
     align-items: center;
-    position: fixed; /* Scroll karne par upar hi rahega */
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
     width: 100%;
-    backdrop-filter: blur(10px); /* Kaanch jaisa dhundla effect */
-    background: rgba(255, 255, 255, 0.7); 
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    z-index: 1000;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.05); /* Very slight translucent header */
+    backdrop-filter: blur(10px); /* Premium blurry header effect */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .logo {
     font-size: 22px;
     font-weight: 800;
     letter-spacing: -1px;
+    color: #000;
 }
 
 nav ul {
@@ -40,88 +54,80 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #555;
+    color: #333;
     font-size: 14px;
     font-weight: 500;
-    transition: 0.3s;
+    transition: color 0.3s;
 }
 
 nav a:hover { color: #000; }
 
-/* HERO SECTION (Main Content) */
+.sign-in-btn {
+    border: 1.5px solid #ccc;
+    background: transparent;
+    padding: 10px 22px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sign-in-btn:hover { background: #f4f4f4; border-color: #999; }
+
+/* MAIN HERO CONTENT */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 0 20px;
+    background: transparent !important; /* HATAYO WHITE BACKGROUND! */
+    padding-top: 100px;
 }
 
-.hero h1 {
-    font-size: clamp(2.5rem, 8vw, 4.5rem); /* Responsive text size */
-    font-weight: 800;
-    line-height: 1.1;
+.hero-content {
     max-width: 900px;
 }
 
+.hero h1 {
+    font-size: 4rem; /* Bada, impactful text */
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000;
+    margin-bottom: 25px;
+}
+
 .hero h1 span {
-   background: linear-gradient(90deg, #ff4d4d, #f9cb28);
--webkit-background-clip: text;
-background-clip: text; /* Ye extra line add karein */
--webkit-text-fill-color: transparent;
+    color: #71249b; /* Purple gradient shade */
 }
 
 .hero p {
-    margin-top: 20px;
-    color: #666;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
+    color: #555;
+    margin-bottom: 45px;
+    line-height: 1.6;
 }
 
-/* BUTTON DESIGN */
 .cta-btn {
-    margin-top: 40px;
+    display: inline-block;
     background-color: #000;
     color: #fff;
-    padding: 16px 40px;
+    padding: 16px 45px;
     border-radius: 50px;
     text-decoration: none;
-    font-weight: 600;
-    transition: transform 0.3s ease;
+    font-weight: 700;
+    transition: transform 0.2s;
 }
 
-.cta-btn:hover {
-    transform: scale(1.05); /* Hover pe halka bada hoga */
+.cta-btn:hover { transform: scale(1.05); }
+
+.secondary-cta {
+    margin-top: 25px;
+    font-size: 1rem;
+    color: #71249b;
+    cursor: pointer;
+    font-weight: 500;
 }
 
-#defaultCanvas0 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Isse animation piche chali jayegi aur text upar dikhega */
-}
-
-.hero {
-    background: transparent !important; /* Background ko transparent rakhein taaki animation dikhe */
-}
-
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-}
-
-header {
-    background: rgba(255, 255, 255, 0.1) !important; /* Halka transparent */
-    backdrop-filter: blur(5px);
-}
-
-.hero {
-    background: transparent !important; /* Ise transparent karna zaroori hai */
-}
-
-/* Text ko white ya light rakhein taaki dark background pe dikhe */
-h1, p {
-    color: #333; 
-}
+.play-icon { font-size: 0.8rem; margin-left: 5px; }

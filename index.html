@@ -1,17 +1,21 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teluox</title>
-    <link rel="stylesheet" href="style.css">
+    <title>TIDY Clone - Your Team's Productivity Hub</title>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="vanta-bg" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></div>
+
+    <div id="vanta-bg"></div>
+
     <header>
-        <div class="logo">TELUOX</div>
+        <div class="logo">TIDY</div>
         <nav>
             <ul>
                 <li><a href="#">Products</a></li>
@@ -26,14 +30,18 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Mobiles, <span>Set covers</span>, Assign Owners.</h1>
-            <p>Apni team ke tasks ko ek hi jagah manage karein.</p>
+            <h1>CREATE CARDS, <span>SET DEADLINES</span>, ASSIGN OWNERS.</h1>
+            <p>Assign deadlines and owners so your team stays on track. Keep project members aware of priorities with real-time updates.</p>
+            
             <a href="#" class="cta-btn">Start Now</a>
-            <video autoplay muted loop id="bg-video" style="position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: -1;">
-            <source src="apni-video-ka-link.mp4" type="video/mp4">
-            </video>
+            
+            <div class="secondary-cta">
+                <span>See it in action</span> <i class="play-icon">▶</i>
+            </div>
         </div>
     </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
