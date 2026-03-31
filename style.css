@@ -93,3 +93,14 @@ nav a:hover { color: #000; }
 .cta-btn:hover {
     transform: scale(1.05); /* Hover pe halka bada hoga */
 }
+
+#defaultCanvas0 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Isse animation piche chali jayegi aur text upar dikhega */
+}
+
+.hero {
+    background: transparent !important; /* Background ko transparent rakhein taaki animation dikhe */
+}
